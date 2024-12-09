@@ -1,0 +1,39 @@
+header {
+  display: flex;
+  background-color: #1add7c;
+  height: 80px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo_image {
+  height: 45px;
+}
+
+.logo_container {
+  margin-left: 4%;
+}
+
+.actions {
+  margin-right: 4%;
+}
+
+.navbar {
+  display: flex;
+  min-width: 400px;
+  justify-content: space-between;
+}
+
+.navbar a {
+  font-size: 14px;
+  letter-spacing: 0.3px;
+  color: rgb(0, 0, 0);
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.navbar a sup {
+  color: #ff3f6c;
+  font-size: 10px;
+}
