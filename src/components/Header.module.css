@@ -1,9 +1,11 @@
 header {
   display: flex;
-  background-color: #1add7c;
+  background-color: #ffffff;
   height: 80px;
   justify-content: space-between;
   align-items: center;
+  box-sizing: border-box;
+  border-bottom: 1px solid #696e79;
 }
 
 .logo_image {
@@ -14,14 +16,14 @@ header {
   margin-left: 4%;
 }
 
-.actions {
+.action_bar {
   margin-right: 4%;
 }
 
 .navbar {
   display: flex;
-  min-width: 400px;
-  justify-content: space-between;
+  min-width: 350px;
+  justify-content: space-evenly;
 }
 
 .navbar a {
@@ -31,9 +33,58 @@ header {
   font-weight: 600;
   text-transform: uppercase;
   text-decoration: none;
+  padding: 27px 0;
+  border-bottom: 4px solid #ffffff;
+}
+
+.navbar a:hover {
+  border-bottom: 4px solid #f54e77;
 }
 
 .navbar a sup {
   color: #ff3f6c;
   font-size: 10px;
+}
+
+.search_bar {
+  display: flex;
+  height: 40px;
+  min-width: 200px;
+  width: 30%;
+  align-items: center;
+}
+
+.search_icon {
+  height: 20px;
+  padding: 10px;
+  background-color: #f5f5f6;
+  color: #282c3f;
+  font-weight: 100;
+  border-radius: 4px 0 0 4px;
+}
+
+.search_input {
+  color: #696e79;
+  background-color: #f5f5f6;
+  flex-grow: 1;
+  height: 40px;
+  border: 0;
+  border-radius: 0 4px 4px 0;
+}
+
+.action_bar {
+  display: flex;
+  min-width: 230px;
+  justify-content: space-between;
+}
+
+.action_icon {
+  height: 20px;
+  width: 20px;
+}
+
+.action_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
