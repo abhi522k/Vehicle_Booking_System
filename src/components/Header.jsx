@@ -28,7 +28,7 @@ const Header = () => {
         </nav>
         <div className={styles["search_bar"]}>
           <span className={styles["search_icon"]}>
-            <FaSearch />
+            <FaSearch className={styles["search_icon_back"]} />
           </span>
           <input
             className={styles["search_input"]}
