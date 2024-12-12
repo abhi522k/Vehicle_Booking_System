@@ -1,11 +1,15 @@
+import Footer from "./components/Footer";
 import Header from "./components/Header";
-import Home from "./components/Home";
+import HomeImageCarousel from "./components/HomeImageCarousel";
+import Vehicles from "./components/Vehicles";
 
 function App() {
   return (
     <>
       <Header />
-      <Home />
+      <HomeImageCarousel />
+      <Vehicles />
+      <Footer />
     </>
   );
 }

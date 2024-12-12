@@ -1,14 +1,14 @@
-import "./Home.css";
+import "./HomeImageCarousel.css";
 import React, { useState, useEffect } from "react";
 
-const Home = () => {
+const HomeImageCarousel = () => {
   const [slideIndex, setSlideIndex] = useState(0);
 
   const slides = [
     { id: 1, img: "cars_ Carousel_1/car1.jpg", caption: "Caption Text" },
     { id: 2, img: "cars_ Carousel_1/car2.jpg", caption: "Caption Two" },
     { id: 3, img: "cars_ Carousel_1/car3.jpg", caption: "Caption Three" },
-    { id: 4, img: "cars_ Carousel_1/car4.jpg", caption: "Caption Four" },
+    // { id: 4, img: "cars_ Carousel_1/car4.jpg", caption: "Caption Four" },
     { id: 5, img: "cars_ Carousel_1/car5.jpg", caption: "Caption Five" },
     { id: 6, img: "cars_ Carousel_1/car6.jpg", caption: "Caption Six" },
     { id: 7, img: "cars_ Carousel_1/car7.jpg", caption: "Caption Seven" },
@@ -42,13 +42,30 @@ const Home = () => {
           <div
             key={slide.id}
             className="mySlides fade"
-            style={{ display: index === slideIndex ? "block" : "none" }}
+            style={{
+              display: index === slideIndex ? "block" : "none",
+              justifyContent: index === slideIndex ? "center" : "none",
+            }}
           >
-            <img
-              src={slide.img}
-              alt={`Slide ${slide.id}`}
-              style={{ width: "100%", height: "500px" }}
-            />
+            <div
+              style={{
+                height: "500px",
+                overflowY: "hidden",
+                position: "relative",
+              }}
+            >
+              <img
+                src={slide.img}
+                alt={`Slide ${slide.id}`}
+                style={{
+                  width: "100%",
+                  height: "700px",
+                  top: "-100px",
+                  bottom: "-100px",
+                  position: "relative",
+                }}
+              />
+            </div>
             <div className="text">{slide.caption}</div>
           </div>
         ))}
@@ -75,4 +92,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default HomeImageCarousel;
