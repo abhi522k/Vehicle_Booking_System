@@ -1,0 +1,88 @@
+.vehicles_container {
+  width: 86%;
+  margin: 40px 7%;
+  color: #ffffff;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: space-around;
+}
+
+.vehicle_container {
+  width: 300px;
+  margin: 10px;
+}
+
+.item-image {
+  width: 100%;
+  height: 250px;
+}
+
+.rating {
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.company_name {
+  margin-top: 15px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1;
+  color: rgb(255, 0, 0);
+  margin-bottom: 6px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.item_name {
+  margin-top: 15px;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 0;
+  margin-top: 0;
+  display: block;
+  line-height: 1;
+  color: #535766;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.price {
+  margin-top: 5px;
+  font-size: 14px;
+  line-height: 15px;
+  color: #ffffff;
+  white-space: nowrap;
+}
+
+.current_price {
+  font-size: 14px;
+  font-weight: 700;
+  color: #282c3f;
+}
+
+.original_price {
+  text-decoration: line-through;
+  color: #7e818c;
+  font-weight: 400;
+  margin-left: 5px;
+  font-size: 12px;
+}
+
+.discount {
+  color: #ff905a;
+  font-weight: 400;
+  font-size: 12px;
+  margin-left: 5px;
+}
+
+.btn-add-bag {
+  margin-top: 6px;
+  font-size: 18px;
+  width: 100%;
+  background-color: lightgreen;
+  border: none;
+  padding: 5px 15px;
+  border-radius: 10px;
+}
