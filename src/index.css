@@ -9,3 +9,13 @@
   font-style: normal;
   background-color: black;
 }
+
+.vehicles_container {
+  width: 80%;
+  margin: 40px 7%;
+  color: #ffffff;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}

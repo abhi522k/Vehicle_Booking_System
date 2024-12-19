@@ -2,22 +2,23 @@ import { FaSearch, FaRegHeart } from "react-icons/fa";
 import { CgProfile } from "react-icons/cg";
 import { MdOutlineShoppingCartCheckout } from "react-icons/md";
 import styles from "./Header.module.css";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
     <>
       <header>
         <div className={`${styles["logo_container"]}`}>
-          <a href="#">
+          <Link to="/">
             <img
               className={styles["logo_image"]}
               src="images/Logo.png"
               alt="Vehicle Booking System Logo"
             />
-          </a>
+          </Link>
         </div>
         <nav className={styles["navbar"]}>
-          <a href="#">Home</a>
+          <Link to="/">Home</Link>
           <a href="#">Vehicles</a>
           {/* <a href="#">
             Bookings <sup>5</sup>
@@ -48,12 +49,13 @@ const Header = () => {
             </span>
             <span className="action_name">Wishlist</span>
           </div>
-          <div className={styles["action_container"]}>
+          <Link className={styles["action_container"]} to="/bag">
             <span className="action_icon">
               <MdOutlineShoppingCartCheckout size="23px" />
             </span>
             <span className="action_name">Booking</span>
-          </div>
+            <span className={styles["bookings-item-count"]}>0</span>
+          </Link>
         </div>
       </header>
     </>
