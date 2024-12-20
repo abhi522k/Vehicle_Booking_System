@@ -22,13 +22,15 @@ const Vehicles = ({ item }) => {
         src={item.image}
         alt="Vehicle photo"
       />
-      <div className={styles["rating"]}>4.5 ⭐ | 1.4k</div>
-      <div className={styles["company_name"]}>{item.make}</div>
-      <div className={styles["item_name"]}>{item.model}</div>
-      <div className={styles["price"]}>
-        <span className={styles["current_price"]}>{item.price}</span>
-        <span className={styles["original_price"]}>{item.price}</span>
-        <span className={styles["discount"]}>(42% OFF)</span>
+      <div className={styles["text-area-card"]}>
+        <div className={styles["rating"]}>4.5 ⭐ | 1.4k</div>
+        <div className={styles["company_name"]}>{item.make}</div>
+        <div className={styles["item_name"]}>{item.model}</div>
+        <div className={styles["price"]}>
+          <span className={styles["current_price"]}>{item.price}</span>
+          <span className={styles["original_price"]}>{item.price}</span>
+          <span className={styles["discount"]}>(42% OFF)</span>
+        </div>
       </div>
       {elementFound ? (
         <button
