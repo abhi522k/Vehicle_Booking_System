@@ -1,29 +1,25 @@
+import { useDispatch, useSelector } from "react-redux";
 import BagItem from "../components/BagItem";
 import BagSummary from "../components/BagSummary";
 import "../components/bag.css";
 
 const Bag = () => {
-  const item = {
-    id: 1,
-    make: "Toyota",
-    model: "Corolla",
-    year: 2022,
-    color: "Silver",
-    mileage: 20000,
-    price: 25000,
-    fuelType: "Gasoline",
-    transmission: "Automatic",
-    engine: "2.0L 4-cylinder",
-    horsepower: 169,
-    features: ["Bluetooth", "Backup Camera", "Keyless Entry"],
-    owners: 1,
-    image: "cars_ Carousel_1/car1.jpg",
-  };
+  const bagItems = useSelector((store) => store.bag);
+  const items = useSelector((store) => store.items);
+  const finalItems = items.filter((item) => {
+    const itemIndex = bagItems.indexOf(item.id);
+    return itemIndex >= 0;
+  });
+
   return (
     <>
       <main>
         <div className="bag-page">
-          <BagItem item={item} />
+          <div className="bag-items-container">
+            {finalItems.map((item) => (
+              <BagItem item={item} />
+            ))}
+          </div>
           <BagSummary />
         </div>
       </main>

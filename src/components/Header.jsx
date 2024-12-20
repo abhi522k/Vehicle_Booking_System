@@ -3,8 +3,11 @@ import { CgProfile } from "react-icons/cg";
 import { MdOutlineShoppingCartCheckout } from "react-icons/md";
 import styles from "./Header.module.css";
 import { Link } from "react-router-dom";
+import { useSelector } from "react-redux";
 
 const Header = () => {
+  const bag = useSelector((store) => store.bag);
+
   return (
     <>
       <header>
@@ -54,7 +57,7 @@ const Header = () => {
               <MdOutlineShoppingCartCheckout size="23px" />
             </span>
             <span className="action_name">Booking</span>
-            <span className={styles["bookings-item-count"]}>0</span>
+            <span className={styles["bookings-item-count"]}>{bag.length}</span>
           </Link>
         </div>
       </header>

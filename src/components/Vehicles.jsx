@@ -1,6 +1,20 @@
+import { useDispatch, useSelector } from "react-redux";
 import styles from "./Vehicles.module.css";
+import { bagActions } from "../store/bagSlice";
 
 const Vehicles = ({ item }) => {
+  const dispatch = useDispatch();
+  const bagItems = useSelector((store) => store.bag);
+  const elementFound = bagItems.indexOf(item.id) >= 0;
+
+  const handleAddToBag = (id) => {
+    dispatch(bagActions.addToBag(item.id));
+  };
+
+  const handleRemovefromBag = () => {
+    dispatch(bagActions.removeFromBag(item.id));
+  };
+
   return (
     <div className={styles["vehicle_container"]}>
       <img
@@ -16,7 +30,23 @@ const Vehicles = ({ item }) => {
         <span className={styles["original_price"]}>{item.price}</span>
         <span className={styles["discount"]}>(42% OFF)</span>
       </div>
-      <button className={styles["btn-add-bag"]}>Checkout</button>
+      {elementFound ? (
+        <button
+          type="button"
+          onClick={handleRemovefromBag}
+          className={`btn ${styles["btn-add-bag"]} btn-danger`}
+        >
+          Remove from Cart
+        </button>
+      ) : (
+        <button
+          onClick={() => handleAddToBag(item.id)}
+          type="button"
+          className={`btn btn-success ${styles["btn-add-bag"]}`}
+        >
+          Add to Cart
+        </button>
+      )}
     </div>
   );
 };

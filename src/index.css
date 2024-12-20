@@ -12,9 +12,8 @@
 
 .vehicles_container {
   width: 80%;
-  margin: 40px 7%;
+  margin: 60px auto;
   color: #ffffff;
-  background-color: rgb(255, 255, 255);
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;

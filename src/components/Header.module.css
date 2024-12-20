@@ -7,12 +7,11 @@ header {
   align-items: center;
   box-sizing: border-box;
   border-bottom: 1px solid #696e79;
-  padding-bottom: 1px;
+  padding-bottom: 4px;
 }
 
 .logo_image {
   height: 60px;
-  margin-top: 2px;
 }
 
 .logo_container {
@@ -37,11 +36,11 @@ header {
   text-transform: uppercase;
   text-decoration: none;
   padding: 22px 0;
-  border-bottom: 6px solid #000000;
+  border-bottom: 7px solid #000000;
 }
 
 .navbar a:hover {
-  border-bottom: 6px solid #ff0000;
+  border-bottom: 7px solid #ff0000;
 }
 
 .navbar a sup {
@@ -58,8 +57,8 @@ header {
 }
 
 .search_icon {
-  height: 20px;
-  padding: 10px;
+  height: 40px;
+  padding: 8px;
   color: #ffffff;
   background-color: #3a3a3b;
   font-weight: 100;

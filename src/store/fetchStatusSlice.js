@@ -8,13 +8,13 @@ const fetchStatusSlice = createSlice({
   },
   reducers: {
     markFetchDone: (state) => {
-      return (state.fetchDone = true);
+      return void (state.fetchDone = true);
     },
     markFetchingStarted: (state) => {
-      return (state.currentlyFetching = true);
+      return void (state.currentlyFetching = true);
     },
     markFetchingFinished: (state) => {
-      return (state.currentlyFetching = false);
+      return void (state.currentlyFetching = false);
     },
   },
 });
