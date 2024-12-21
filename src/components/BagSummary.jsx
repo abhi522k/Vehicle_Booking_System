@@ -39,7 +39,6 @@ const BagSummary = () => {
           <span className="price-item-tag">Convenience Fee</span>
           <span className="price-item-value">₹99</span>
         </div>
-        <hr />
         <div className="price-footer">
           <span className="price-item-tag">Total Amount</span>
           <span className="price-item-value">₹{finalPayment}</span>

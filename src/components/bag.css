@@ -6,7 +6,6 @@
   padding-top: 32px;
   color: #282c3f;
   font-size: 13px;
-  line-height: 1.42857143;
 }
 
 .bag-page {
@@ -19,7 +18,7 @@
   display: inline-block;
   width: 30%;
   padding: 24px 0 0 16px;
-  color: #282c3f;
+  color: #ffffff;
   font-size: 13px;
   line-height: 1.42857143;
 }
@@ -32,14 +31,14 @@
   font-size: 12px;
   font-weight: 700;
   margin: 24px 0 16px;
-  color: #535766;
+  color: #ffffff;
 }
 
 .price-item {
   margin-bottom: 12px;
   line-height: 16px;
   font-size: 14px;
-  color: #282c3f;
+  color: #ffffff;
 }
 
 .price-item-value {
@@ -55,7 +54,7 @@
   font-size: 15px;
   padding-top: 16px;
   border-top: 1px solid #eaeaec;
-  color: #3e4152;
+  color: #ffffff;
   line-height: 16px;
 }
 
@@ -74,47 +73,78 @@
 
 .bag-item-container {
   margin-bottom: 8px;
-  background: #fff;
+  background-color: #212121;
   font-size: 14px;
-  border: 1px solid #eaeaec;
+  border: 7px solid #212121;
   border-radius: 4px;
   position: relative;
-  padding: 12px 12px 0;
 }
 
 .item-left-part {
   position: absolute;
-  background: rgb(255, 242, 223);
-  height: 148px;
-  width: 111px;
+  background: #212121;
+  height: 120px;
+  width: 150px;
 }
 
 .item-right-part {
   padding-left: 12px;
   position: relative;
-  min-height: 148px;
-  margin-left: 111px;
-  margin-bottom: 12px;
+  min-height: 120px;
+  margin-left: 150px;
+  margin-bottom: 4px;
+  color: #fff;
+  background-color: #212121;
+}
+
+.company {
+  background: #212121;
+  color: #edf0d1;
+}
+
+.item-name {
+  background: #212121;
+  padding: 0px 0 5px 25px;
+  font-size: 20px;
+}
+
+.price-container {
+  background: #212121;
+}
+
+.current-price {
+  background: #212121;
+}
+
+.discount-percentage {
+  background: #212121;
+  color: #03a685;
 }
 
 .bag-item-img {
   width: 100%;
+  height: 100%;
+  border-radius: 13px;
 }
 
 .return-period {
   display: inline-flex;
   font-size: 14px;
-  padding-top: 8px;
+  padding-top: 2px;
+  background: #212121;
 }
 
 .return-period-days {
   font-weight: 700;
   margin-right: 4px;
+  color: rgb(238, 153, 153);
+  background: #212121;
 }
 
 .delivery-details {
   margin-top: 5px;
-  color: #282c3f;
+  color: #ffffff;
+  background: #212121;
   font-size: 12px;
   letter-spacing: -0.1px;
   margin-bottom: 8px;
@@ -122,15 +152,18 @@
 }
 
 .delivery-details-days {
-  color: #03a685;
+  color: #c0c0f3;
+  background: #212121;
 }
 
 .remove-from-cart {
   position: absolute;
+  color: #fff;
   font-size: 25px;
-  top: 10px;
+  top: 13px;
   right: 18px;
   width: 14px;
   height: 14px;
   cursor: pointer;
+  background: #212121;
 }
