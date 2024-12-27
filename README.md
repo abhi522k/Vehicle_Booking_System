@@ -8,11 +8,13 @@
 ## Introduction
 The Vehicle Booking System is a web application designed to facilitate the booking and management of vehicles. This project is built using JavaScript, CSS, and HTML.
 
-## Technologies Used
-- **React**: Main framework
-- **JavaScript**: Main programming language
-- **CSS**: Styling the application
-- **HTML**: Structuring the web pages
+## Technologies Used  
+- **React:** Main framework for building the user interface.  
+- **React Router:** For implementing dynamic routing within the application.  
+- **Redux Toolkit:** For state management across the application.  
+- **JavaScript:** Core programming language.  
+- **CSS:** Styling the application.  
+- **HTML:** Structuring the web pages. 
 
 ## Installation
 To get a local copy up and running follow these simple steps:
